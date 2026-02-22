@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Create npm folder
+        run: mkdir -p ~/.npm
+
       - name: cache
         id: cache
         uses: actions/cache@v4
